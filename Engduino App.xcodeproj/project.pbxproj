@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20251E01BC6A32100929E16 /* ENGSerialPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20251DF1BC6A32100929E16 /* ENGSerialPort.swift */; };
+		B20251E61BC6AE2600929E16 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20251E51BC6AE2600929E16 /* IOKit.framework */; };
+		B20251E71BC6AF9800929E16 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20251E31BC6AE0C00929E16 /* CoreFoundation.framework */; };
+		B28406A71BC67CF000C2437B /* ENGParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28406A61BC67CF000C2437B /* ENGParseManager.swift */; };
+		B2AAFD441BC0157C002753EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AAFD431BC0157C002753EB /* AppDelegate.swift */; };
+		B2AAFD461BC0157C002753EB /* ENGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AAFD451BC0157C002753EB /* ENGViewController.swift */; };
+		B2AAFD481BC0157C002753EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AAFD471BC0157C002753EB /* Assets.xcassets */; };
+		B2AAFD4B1BC0157C002753EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AAFD491BC0157C002753EB /* Main.storyboard */; };
+		B2AAFD571BC015DC002753EB /* Bolts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B2AAFD521BC015CE002753EB /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2AAFD581BC015DC002753EB /* Parse.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B2AAFD531BC015CE002753EB /* Parse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2AAFD5E1BC01605002753EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AAFD5D1BC01605002753EB /* SystemConfiguration.framework */; };
+		B2AB7C171C1E17B100C5005B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AB7C161C1E17B100C5005B /* Parse.framework */; };
+		B2AB7C191C1E17BA00C5005B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AB7C181C1E17BA00C5005B /* Bolts.framework */; };
+		B2AB7C1B1C1E17E200C5005B /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AB7C1A1C1E17E200C5005B /* ApplicationServices.framework */; };
+		B2AB7C1D1C1E17E900C5005B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AB7C1C1C1E17E900C5005B /* CFNetwork.framework */; };
+		B2AB7C1F1C1E17EF00C5005B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AB7C1E1C1E17EF00C5005B /* CoreGraphics.framework */; };
+		B2AB7C211C1E17F600C5005B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AB7C201C1E17F600C5005B /* CoreLocation.framework */; };
+		B2AB7C231C1E17FC00C5005B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AB7C221C1E17FC00C5005B /* QuartzCore.framework */; };
+		B2AB7C251C1E180200C5005B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AB7C241C1E180200C5005B /* Security.framework */; };
+		B2AB7C271C1E181400C5005B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AB7C261C1E181400C5005B /* libsqlite3.tbd */; };
+		B2AB7C291C1E181A00C5005B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AB7C281C1E181A00C5005B /* libz.tbd */; };
+		B2BCF1A41BC711360025ADA2 /* ORSSerialBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BCF19B1BC711360025ADA2 /* ORSSerialBuffer.m */; };
+		B2BCF1A51BC711360025ADA2 /* ORSSerialPacketDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BCF19D1BC711360025ADA2 /* ORSSerialPacketDescriptor.m */; };
+		B2BCF1A61BC711360025ADA2 /* ORSSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BCF19F1BC711360025ADA2 /* ORSSerialPort.m */; };
+		B2BCF1A71BC711360025ADA2 /* ORSSerialPortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BCF1A11BC711360025ADA2 /* ORSSerialPortManager.m */; };
+		B2BCF1A81BC711360025ADA2 /* ORSSerialRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BCF1A31BC711360025ADA2 /* ORSSerialRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2AAFD561BC015D4002753EB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B2AAFD581BC015DC002753EB /* Parse.framework in CopyFiles */,
+				B2AAFD571BC015DC002753EB /* Bolts.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B20251DF1BC6A32100929E16 /* ENGSerialPort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENGSerialPort.swift; sourceTree = "<group>"; };
+		B20251E31BC6AE0C00929E16 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B20251E51BC6AE2600929E16 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		B20251E81BC6B0B600929E16 /* Engduino App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Engduino App-Bridging-Header.h"; sourceTree = "<group>"; };
+		B28406A61BC67CF000C2437B /* ENGParseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENGParseManager.swift; sourceTree = "<group>"; };
+		B2AAFD401BC0157C002753EB /* Engduino App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Engduino App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2AAFD431BC0157C002753EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2AAFD451BC0157C002753EB /* ENGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENGViewController.swift; sourceTree = "<group>"; };
+		B2AAFD471BC0157C002753EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2AAFD4A1BC0157C002753EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2AAFD4C1BC0157C002753EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2AAFD521BC015CE002753EB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "/Users/PekanMomodu/Documents/xcode/Engduino App/Bolts.framework"; sourceTree = "<absolute>"; };
+		B2AAFD531BC015CE002753EB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "/Users/PekanMomodu/Documents/xcode/Engduino App/Parse.framework"; sourceTree = "<absolute>"; };
+		B2AAFD5D1BC01605002753EB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B2AB7C161C1E17B100C5005B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B2AB7C181C1E17BA00C5005B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		B2AB7C1A1C1E17E200C5005B /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		B2AB7C1C1C1E17E900C5005B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B2AB7C1E1C1E17EF00C5005B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B2AB7C201C1E17F600C5005B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B2AB7C221C1E17FC00C5005B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B2AB7C241C1E180200C5005B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B2AB7C261C1E181400C5005B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B2AB7C281C1E181A00C5005B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B2BCF19A1BC711360025ADA2 /* ORSSerialBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialBuffer.h; sourceTree = "<group>"; };
+		B2BCF19B1BC711360025ADA2 /* ORSSerialBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialBuffer.m; sourceTree = "<group>"; };
+		B2BCF19C1BC711360025ADA2 /* ORSSerialPacketDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPacketDescriptor.h; sourceTree = "<group>"; };
+		B2BCF19D1BC711360025ADA2 /* ORSSerialPacketDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPacketDescriptor.m; sourceTree = "<group>"; };
+		B2BCF19E1BC711360025ADA2 /* ORSSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPort.h; sourceTree = "<group>"; };
+		B2BCF19F1BC711360025ADA2 /* ORSSerialPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPort.m; sourceTree = "<group>"; };
+		B2BCF1A01BC711360025ADA2 /* ORSSerialPortManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPortManager.h; sourceTree = "<group>"; };
+		B2BCF1A11BC711360025ADA2 /* ORSSerialPortManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPortManager.m; sourceTree = "<group>"; };
+		B2BCF1A21BC711360025ADA2 /* ORSSerialRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialRequest.h; sourceTree = "<group>"; };
+		B2BCF1A31BC711360025ADA2 /* ORSSerialRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialRequest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2AAFD3D1BC0157C002753EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2AB7C291C1E181A00C5005B /* libz.tbd in Frameworks */,
+				B2AB7C271C1E181400C5005B /* libsqlite3.tbd in Frameworks */,
+				B2AAFD5E1BC01605002753EB /* SystemConfiguration.framework in Frameworks */,
+				B2AB7C251C1E180200C5005B /* Security.framework in Frameworks */,
+				B2AB7C231C1E17FC00C5005B /* QuartzCore.framework in Frameworks */,
+				B2AB7C211C1E17F600C5005B /* CoreLocation.framework in Frameworks */,
+				B2AB7C1F1C1E17EF00C5005B /* CoreGraphics.framework in Frameworks */,
+				B2AB7C1D1C1E17E900C5005B /* CFNetwork.framework in Frameworks */,
+				B2AB7C1B1C1E17E200C5005B /* ApplicationServices.framework in Frameworks */,
+				B20251E71BC6AF9800929E16 /* CoreFoundation.framework in Frameworks */,
+				B20251E61BC6AE2600929E16 /* IOKit.framework in Frameworks */,
+				B2AB7C191C1E17BA00C5005B /* Bolts.framework in Frameworks */,
+				B2AB7C171C1E17B100C5005B /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2AAFD371BC0157C002753EB = {
+			isa = PBXGroup;
+			children = (
+				B2AB7C281C1E181A00C5005B /* libz.tbd */,
+				B2AB7C261C1E181400C5005B /* libsqlite3.tbd */,
+				B2AB7C241C1E180200C5005B /* Security.framework */,
+				B2AB7C221C1E17FC00C5005B /* QuartzCore.framework */,
+				B2AB7C201C1E17F600C5005B /* CoreLocation.framework */,
+				B2AB7C1E1C1E17EF00C5005B /* CoreGraphics.framework */,
+				B2AB7C1C1C1E17E900C5005B /* CFNetwork.framework */,
+				B2AB7C1A1C1E17E200C5005B /* ApplicationServices.framework */,
+				B2AB7C181C1E17BA00C5005B /* Bolts.framework */,
+				B2AB7C161C1E17B100C5005B /* Parse.framework */,
+				B20251E51BC6AE2600929E16 /* IOKit.framework */,
+				B20251E31BC6AE0C00929E16 /* CoreFoundation.framework */,
+				B2AAFD5D1BC01605002753EB /* SystemConfiguration.framework */,
+				B2AAFD421BC0157C002753EB /* Engduino App */,
+				B2AAFD411BC0157C002753EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2AAFD411BC0157C002753EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2AAFD401BC0157C002753EB /* Engduino App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2AAFD421BC0157C002753EB /* Engduino App */ = {
+			isa = PBXGroup;
+			children = (
+				B2BCF1991BC7112B0025ADA2 /* ORSSerialPort */,
+				B2AAFD431BC0157C002753EB /* AppDelegate.swift */,
+				B28406A61BC67CF000C2437B /* ENGParseManager.swift */,
+				B20251DF1BC6A32100929E16 /* ENGSerialPort.swift */,
+				B2AAFD451BC0157C002753EB /* ENGViewController.swift */,
+				B2AAFD471BC0157C002753EB /* Assets.xcassets */,
+				B2AAFD491BC0157C002753EB /* Main.storyboard */,
+				B2AAFD4C1BC0157C002753EB /* Info.plist */,
+				B20251E81BC6B0B600929E16 /* Engduino App-Bridging-Header.h */,
+			);
+			path = "Engduino App";
+			sourceTree = "<group>";
+		};
+		B2BCF1991BC7112B0025ADA2 /* ORSSerialPort */ = {
+			isa = PBXGroup;
+			children = (
+				B2BCF19A1BC711360025ADA2 /* ORSSerialBuffer.h */,
+				B2BCF19B1BC711360025ADA2 /* ORSSerialBuffer.m */,
+				B2BCF19C1BC711360025ADA2 /* ORSSerialPacketDescriptor.h */,
+				B2BCF19D1BC711360025ADA2 /* ORSSerialPacketDescriptor.m */,
+				B2BCF19E1BC711360025ADA2 /* ORSSerialPort.h */,
+				B2BCF19F1BC711360025ADA2 /* ORSSerialPort.m */,
+				B2BCF1A01BC711360025ADA2 /* ORSSerialPortManager.h */,
+				B2BCF1A11BC711360025ADA2 /* ORSSerialPortManager.m */,
+				B2BCF1A21BC711360025ADA2 /* ORSSerialRequest.h */,
+				B2BCF1A31BC711360025ADA2 /* ORSSerialRequest.m */,
+			);
+			path = ORSSerialPort;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2AAFD3F1BC0157C002753EB /* Engduino App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2AAFD4F1BC0157C002753EB /* Build configuration list for PBXNativeTarget "Engduino App" */;
+			buildPhases = (
+				B2AAFD3C1BC0157C002753EB /* Sources */,
+				B2AAFD3D1BC0157C002753EB /* Frameworks */,
+				B2AAFD3E1BC0157C002753EB /* Resources */,
+				B2AAFD561BC015D4002753EB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Engduino App";
+			productName = "Engduino App";
+			productReference = B2AAFD401BC0157C002753EB /* Engduino App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2AAFD381BC0157C002753EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Ovation International";
+				TargetAttributes = {
+					B2AAFD3F1BC0157C002753EB = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = B2AAFD3B1BC0157C002753EB /* Build configuration list for PBXProject "Engduino App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2AAFD371BC0157C002753EB;
+			productRefGroup = B2AAFD411BC0157C002753EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2AAFD3F1BC0157C002753EB /* Engduino App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2AAFD3E1BC0157C002753EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2AAFD481BC0157C002753EB /* Assets.xcassets in Resources */,
+				B2AAFD4B1BC0157C002753EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2AAFD3C1BC0157C002753EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2AAFD461BC0157C002753EB /* ENGViewController.swift in Sources */,
+				B2AAFD441BC0157C002753EB /* AppDelegate.swift in Sources */,
+				B2BCF1A41BC711360025ADA2 /* ORSSerialBuffer.m in Sources */,
+				B2BCF1A71BC711360025ADA2 /* ORSSerialPortManager.m in Sources */,
+				B2BCF1A81BC711360025ADA2 /* ORSSerialRequest.m in Sources */,
+				B2BCF1A61BC711360025ADA2 /* ORSSerialPort.m in Sources */,
+				B20251E01BC6A32100929E16 /* ENGSerialPort.swift in Sources */,
+				B2BCF1A51BC711360025ADA2 /* ORSSerialPacketDescriptor.m in Sources */,
+				B28406A71BC67CF000C2437B /* ENGParseManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B2AAFD491BC0157C002753EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2AAFD4A1BC0157C002753EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2AAFD4D1BC0157C002753EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2AAFD4E1BC0157C002753EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B2AAFD501BC0157C002753EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Engduino App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ovationintl.Engduino-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Engduino App/Engduino App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2AAFD511BC0157C002753EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Engduino App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ovationintl.Engduino-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Engduino App/Engduino App-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2AAFD3B1BC0157C002753EB /* Build configuration list for PBXProject "Engduino App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2AAFD4D1BC0157C002753EB /* Debug */,
+				B2AAFD4E1BC0157C002753EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2AAFD4F1BC0157C002753EB /* Build configuration list for PBXNativeTarget "Engduino App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2AAFD501BC0157C002753EB /* Debug */,
+				B2AAFD511BC0157C002753EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2AAFD381BC0157C002753EB /* Project object */;
+}
